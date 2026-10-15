@@ -11,7 +11,7 @@ Can an independent acceptance mechanism reduce harmful patch activations while r
 
 The intended system separates patch generation from the process that decides whether a patch can be activated. This repository starts with a small, reproducible fixture experiment to test that acceptance pipeline.
 
-> **Status: experimental research prototype, work in progress.** The current pilot uses four handwritten C candidates. No AI-generated repair has been evaluated. Timing is a deterministic surrogate, and the project has no spacecraft integration or flight qualification. There is no submitted or accepted paper associated with this repository.
+> **Status: experimental research prototype, work in progress.** The repository includes the original four-fixture pilot and new local-model experiments: 34 attempts across two models and three synthetic tasks. Two 1.5B-model trials produced evaluator-valid repairs. Separate measured host CPU-contention tests are also recorded. There is no spacecraft integration or flight qualification. There is no submitted or accepted paper associated with this repository.
 
 ## Quick start
 
@@ -26,6 +26,17 @@ python3 -m unittest discover -s tests -v
 
 The pilot writes a [readable report](results/pilot.md) and [JSON records](results/pilot.json). Host compilation and validation times vary between machines. The host runner is for the included trusted fixtures; use the documented disposable container path for generated candidates.
 
+## Preliminary local-model results
+
+| Model (Q4_K_M) | Task/seed trials | Generation attempts | Evaluator-valid trials | Peak inference RSS |
+| --- | --- | --- | --- | --- |
+| Qwen2.5-Coder 0.5B Instruct | 9 | 18 | 0 | 609-611 MiB |
+| Qwen2.5-Coder 1.5B Instruct | 9 | 16 | 2 | 1813-1816 MiB |
+
+Only three synthetic defects were used. Repeated seeds are not independent vulnerabilities, and these counts are not general repair success estimates. B1 and B2 made identical decisions, so this pilot does not establish an acceptance-gate improvement.
+
+See [the study report](results/STUDY.md), [raw summary](results/study-summary.json), and [model reproduction guide](docs/MODEL_EXPERIMENT.md). Host workload measurements exclude inference and real patch validation.
+
 ## What is implemented
 
 - A synthetic C packet parser and four labelled candidate implementations.
@@ -33,7 +44,10 @@ The pilot writes a [readable report](results/pilot.md) and [JSON records](result
 - Three acceptance policies, plus a no-repair timing reference.
 - Artifact digest verification and disposable executable replacement.
 - Interrupted activation and health-failure rollback checks.
-- A local model CLI adapter and container evaluator, both still unverified end to end.
+- A verified local GGUF inference runner with network syscall denial and restricted C runtime execution.
+- Three synthetic predicate tasks and two bounded local-model experiments.
+- A separate measured periodic-workload contention experiment.
+- The original generic model CLI adapter and Docker evaluator, still unverified end to end.
 
 | Policy | Acceptance rule |
 | --- | --- |
@@ -65,7 +79,7 @@ The parser is synthetic and does not implement CCSDS or any flight-software fram
 
 B3 avoids timing misses by construction of its surrogate policy. This is not measured scheduling performance. The host pilot does not implement protected privilege separation, complete process-tree budget enforcement, persistent-state migration, or measured power usage. Rollback can restore availability while restoring the original vulnerability.
 
-The container and model adapter are supplied for further development. Container evaluation, real offline inference, and hardware resource measurements remain to be verified.
+The original container and generic CLI adapter remain unverified. The separate `experiments/` runner has completed local model inference with network syscall denial and network-filtered replay of compilation/validation. The compiler lacks a hardened filesystem sandbox. Full protected-supervisor isolation, complete repair-pipeline mission interference, and target-device measurements remain unfinished.
 
 ## Contributing and citation
 

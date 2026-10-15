@@ -1,0 +1,119 @@
+{
+  "network_socket_denied": true,
+  "scope": "replay compilation and all validation in a network-filtered parent; generated source unchanged",
+  "matches": true,
+  "rows": [
+    {
+      "id": "length-seed11-attempt1",
+      "same_as_original": true,
+      "development_pass": false,
+      "acceptance_pass": false,
+      "evaluation_pass": false
+    },
+    {
+      "id": "length-seed11-attempt2",
+      "same_as_original": true,
+      "development_pass": false,
+      "acceptance_pass": false,
+      "evaluation_pass": false
+    },
+    {
+      "id": "length-seed22-attempt1",
+      "same_as_original": true,
+      "development_pass": false,
+      "acceptance_pass": false,
+      "evaluation_pass": false
+    },
+    {
+      "id": "length-seed22-attempt2",
+      "same_as_original": true,
+      "development_pass": false,
+      "acceptance_pass": false,
+      "evaluation_pass": false
+    },
+    {
+      "id": "length-seed33-attempt1",
+      "same_as_original": true,
+      "development_pass": true,
+      "acceptance_pass": true,
+      "evaluation_pass": true
+    },
+    {
+      "id": "arithmetic-seed11-attempt1",
+      "same_as_original": true,
+      "development_pass": false,
+      "acceptance_pass": false,
+      "evaluation_pass": false
+    },
+    {
+      "id": "arithmetic-seed11-attempt2",
+      "same_as_original": true,
+      "development_pass": false,
+      "acceptance_pass": false,
+      "evaluation_pass": false
+    },
+    {
+      "id": "arithmetic-seed22-attempt1",
+      "same_as_original": true,
+      "development_pass": false,
+      "acceptance_pass": false,
+      "evaluation_pass": false
+    },
+    {
+      "id": "arithmetic-seed22-attempt2",
+      "same_as_original": true,
+      "development_pass": false,
+      "acceptance_pass": false,
+      "evaluation_pass": false
+    },
+    {
+      "id": "arithmetic-seed33-attempt1",
+      "same_as_original": true,
+      "development_pass": false,
+      "acceptance_pass": false,
+      "evaluation_pass": false
+    },
+    {
+      "id": "arithmetic-seed33-attempt2",
+      "same_as_original": true,
+      "development_pass": false,
+      "acceptance_pass": false,
+      "evaluation_pass": false
+    },
+    {
+      "id": "authorization-seed11-attempt1",
+      "same_as_original": true,
+      "development_pass": false,
+      "acceptance_pass": false,
+      "evaluation_pass": false
+    },
+    {
+      "id": "authorization-seed11-attempt2",
+      "same_as_original": true,
+      "development_pass": false,
+      "acceptance_pass": false,
+      "evaluation_pass": false
+    },
+    {
+      "id": "authorization-seed22-attempt1",
+      "same_as_original": true,
+      "development_pass": false,
+      "acceptance_pass": false,
+      "evaluation_pass": false
+    },
+    {
+      "id": "authorization-seed22-attempt2",
+      "same_as_original": true,
+      "development_pass": false,
+      "acceptance_pass": false,
+      "evaluation_pass": false
+    },
+    {
+      "id": "authorization-seed33-attempt1",
+      "same_as_original": true,
+      "development_pass": true,
+      "acceptance_pass": true,
+      "evaluation_pass": true
+    }
+  ]
+}

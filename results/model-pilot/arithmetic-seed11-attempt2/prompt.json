@@ -1,0 +1,20 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You repair a C function. Return only the complete int repair(uint32_t a, uint32_t b, uint32_t c) function. No Markdown, headers, main, or explanations. uint32_t and uint64_t are already defined."
+    },
+    {
+      "role": "user",
+      "content": "a and b are unsigned 32-bit segment lengths, c is an unsigned 32-bit capacity. Return 1 iff the mathematical sum a+b <= c. Unsigned wraparound must never allow an oversized sum. Otherwise return 0.\nBuggy function:\nint repair(uint32_t a, uint32_t b, uint32_t c) { return a + b <= c; }\nVisible development examples (arguments -> expected):\n(1, 2, 3) -> 1\n(3, 4, 6) -> 0\n(4294967295, 1, 0) -> 0"
+    },
+    {
+      "role": "assistant",
+      "content": "1"
+    },
+    {
+      "role": "user",
+      "content": "Compilation or output contract failed: source_contract_rejected\nReturn only the corrected function."
+    }
+  ]
+}

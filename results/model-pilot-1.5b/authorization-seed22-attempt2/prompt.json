@@ -1,0 +1,20 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You repair a C function. Return only the complete int repair(uint32_t a, uint32_t b, uint32_t c) function. No Markdown, headers, main, or explanations. uint32_t and uint64_t are already defined."
+    },
+    {
+      "role": "user",
+      "content": "a is a granted permission bitmask, b is a required permission bitmask, c is an authorization flag. Return 1 iff b != 0, every bit in b is present in a, and c equals 1. Otherwise return 0.\nBuggy function:\nint repair(uint32_t a, uint32_t b, uint32_t c) { (void)c; return (a & b) != 0; }\nVisible development examples (arguments -> expected):\n(3, 3, 1) -> 1\n(1, 3, 1) -> 0\n(0, 1, 1) -> 0"
+    },
+    {
+      "role": "assistant",
+      "content": "int repair(uint32_t a, uint32_t b, uint32_t c) { (void)c; return (a & b) != 0; }"
+    },
+    {
+      "role": "user",
+      "content": "Development test failures: [{\"args\": [1, 3, 1], \"expected\": 0, \"returncode\": 0, \"stdout\": \"1\\n\", \"stderr\": \"\", \"timeout\": false, \"wall_seconds\": 0.003209002000403416}]\nReturn only the corrected function."
+    }
+  ]
+}

@@ -9,11 +9,12 @@
 
 ## Next experiment
 
-- [ ] Select and record a local model, exact weights, license, and inference configuration.
+- [x] Record two local Qwen models, exact GGUF revisions/checksums, and inference configuration.
 - [ ] Verify the model adapter and disposable container evaluator end to end.
-- [ ] Run generation, compilation, and validation with genuine network isolation.
+- [x] Run generation with network syscall denial and reproduce compilation/validation with network-filtered replay.
 - [ ] Separate generator access from acceptance and evaluator files.
-- [ ] Record every attempt, including failures and resource exhaustion.
+- [x] Record all 34 bounded model attempts, including build failures and incorrect outputs.
+- [x] Measure a separate host CPU-contention workload (inference excluded).
 
 ## Evidence required for the paper
 

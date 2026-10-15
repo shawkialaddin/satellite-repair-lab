@@ -1,0 +1,21 @@
+{
+  "text": "```c\nint repair(uint32_t a, uint32_t b, uint32_t c) {\n    return (a + b) <= c;\n}\n```",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 337,
+    "completion_tokens": 36,
+    "total_tokens": 373
+  },
+  "load_seconds": 0.5397124119999717,
+  "generation_seconds": 7.114187079000658,
+  "peak_rss_kib": 1857556,
+  "cpu_seconds": 14.732432000000001,
+  "network_socket_denied": true,
+  "seed": 34,
+  "backend": "llama-cpp-python 0.3.16",
+  "context": 2048,
+  "max_tokens": 384,
+  "temperature": 0.2,
+  "top_p": 0.95,
+  "threads": 2
+}

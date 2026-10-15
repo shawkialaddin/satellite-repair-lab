@@ -1,0 +1,21 @@
+{
+  "text": "1",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 198,
+    "completion_tokens": 1,
+    "total_tokens": 199
+  },
+  "load_seconds": 0.25929800100038847,
+  "generation_seconds": 1.6594809480002368,
+  "peak_rss_kib": 624776,
+  "cpu_seconds": 3.675627,
+  "network_socket_denied": true,
+  "seed": 22,
+  "backend": "llama-cpp-python 0.3.16",
+  "context": 2048,
+  "max_tokens": 384,
+  "temperature": 0.2,
+  "top_p": 0.95,
+  "threads": 2
+}

@@ -1,0 +1,2747 @@
+[
+  {
+    "id": "length-seed11-attempt1",
+    "task": "length",
+    "seed": 11,
+    "attempt": 1,
+    "generation_returncode": 0,
+    "total_inference_wall_seconds": 2.130060460000095,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 198,
+      "completion_tokens": 1,
+      "total_tokens": 199
+    },
+    "load_seconds": 0.26051000600000407,
+    "generation_seconds": 1.6564176950005276,
+    "peak_rss_kib": 625396,
+    "cpu_seconds": 3.693719,
+    "network_socket_denied": true,
+    "backend": "llama-cpp-python 0.3.16",
+    "context": 2048,
+    "max_tokens": 384,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "threads": 2,
+    "function_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+    "status": "build_failed",
+    "build_error": "source_contract_rejected",
+    "development_pass": false,
+    "acceptance_pass": false,
+    "evaluation_pass": false,
+    "policies": {
+      "B1": "reject",
+      "B2": "reject",
+      "B3_light": "reject",
+      "B3_busy": "reject"
+    }
+  },
+  {
+    "id": "length-seed11-attempt2",
+    "task": "length",
+    "seed": 12,
+    "attempt": 2,
+    "generation_returncode": 0,
+    "total_inference_wall_seconds": 2.8400411470001927,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 226,
+      "completion_tokens": 34,
+      "total_tokens": 260
+    },
+    "load_seconds": 0.21445322799991118,
+    "generation_seconds": 2.451093826000033,
+    "peak_rss_kib": 625596,
+    "cpu_seconds": 5.090027,
+    "network_socket_denied": true,
+    "backend": "llama-cpp-python 0.3.16",
+    "context": 2048,
+    "max_tokens": 384,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "threads": 2,
+    "function_sha256": "96c6e7692808cbe7c6a8f3d8e2aa1fb7b14bc2612c855e5c7589e987d3e9c1d6",
+    "status": "evaluated",
+    "development_pass": false,
+    "acceptance_pass": false,
+    "evaluation_pass": false,
+    "development": {
+      "passed": false,
+      "cases": 3,
+      "failures": [
+        {
+          "args": [
+            2,
+            1,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002484603000084462
+        }
+      ],
+      "failed_cases": 1
+    },
+    "acceptance": {
+      "passed": false,
+      "cases": 6,
+      "failures": [
+        {
+          "args": [
+            1,
+            1,
+            9
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0027075289999629604
+        },
+        {
+          "args": [
+            0,
+            1,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002788370000416762
+        },
+        {
+          "args": [
+            31,
+            30,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002566847999332822
+        }
+      ],
+      "failed_cases": 3
+    },
+    "evaluation": {
+      "passed": false,
+      "cases": 116,
+      "failures": [
+        {
+          "args": [
+            0,
+            0,
+            4
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002519585999834817
+        },
+        {
+          "args": [
+            0,
+            0,
+            4294967295
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002640347999658843
+        },
+        {
+          "args": [
+            0,
+            1,
+            3
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0026890610006375937
+        },
+        {
+          "args": [
+            0,
+            1,
+            4
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0026032569994640653
+        },
+        {
+          "args": [
+            0,
+            1,
+            4294967295
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0027052149998780806
+        },
+        {
+          "args": [
+            0,
+            31,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0024014389991862117
+        },
+        {
+          "args": [
+            0,
+            31,
+            3
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.00247588000001997
+        },
+        {
+          "args": [
+            0,
+            31,
+            4
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002325665000171284
+        },
+        {
+          "args": [
+            0,
+            31,
+            4294967295
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002712866999900143
+        },
+        {
+          "args": [
+            0,
+            32,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0024882690004233154
+        }
+      ],
+      "failed_cases": 71
+    },
+    "policies": {
+      "B1": "reject",
+      "B2": "reject",
+      "B3_light": "reject",
+      "B3_busy": "reject"
+    }
+  },
+  {
+    "id": "length-seed22-attempt1",
+    "task": "length",
+    "seed": 22,
+    "attempt": 1,
+    "generation_returncode": 0,
+    "total_inference_wall_seconds": 2.09536924799977,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 198,
+      "completion_tokens": 1,
+      "total_tokens": 199
+    },
+    "load_seconds": 0.25929800100038847,
+    "generation_seconds": 1.6594809480002368,
+    "peak_rss_kib": 624776,
+    "cpu_seconds": 3.675627,
+    "network_socket_denied": true,
+    "backend": "llama-cpp-python 0.3.16",
+    "context": 2048,
+    "max_tokens": 384,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "threads": 2,
+    "function_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+    "status": "build_failed",
+    "build_error": "source_contract_rejected",
+    "development_pass": false,
+    "acceptance_pass": false,
+    "evaluation_pass": false,
+    "policies": {
+      "B1": "reject",
+      "B2": "reject",
+      "B3_light": "reject",
+      "B3_busy": "reject"
+    }
+  },
+  {
+    "id": "length-seed22-attempt2",
+    "task": "length",
+    "seed": 23,
+    "attempt": 2,
+    "generation_returncode": 0,
+    "total_inference_wall_seconds": 3.626114234999477,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 226,
+      "completion_tokens": 34,
+      "total_tokens": 260
+    },
+    "load_seconds": 0.2450627660000464,
+    "generation_seconds": 3.1808460669999477,
+    "peak_rss_kib": 624028,
+    "cpu_seconds": 6.597639,
+    "network_socket_denied": true,
+    "backend": "llama-cpp-python 0.3.16",
+    "context": 2048,
+    "max_tokens": 384,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "threads": 2,
+    "function_sha256": "96c6e7692808cbe7c6a8f3d8e2aa1fb7b14bc2612c855e5c7589e987d3e9c1d6",
+    "status": "evaluated",
+    "development_pass": false,
+    "acceptance_pass": false,
+    "evaluation_pass": false,
+    "development": {
+      "passed": false,
+      "cases": 3,
+      "failures": [
+        {
+          "args": [
+            2,
+            1,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0027533319998838124
+        }
+      ],
+      "failed_cases": 1
+    },
+    "acceptance": {
+      "passed": false,
+      "cases": 6,
+      "failures": [
+        {
+          "args": [
+            1,
+            1,
+            9
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.003557080000064161
+        },
+        {
+          "args": [
+            0,
+            1,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.00340383499951713
+        },
+        {
+          "args": [
+            31,
+            30,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.003427009999541042
+        }
+      ],
+      "failed_cases": 3
+    },
+    "evaluation": {
+      "passed": false,
+      "cases": 116,
+      "failures": [
+        {
+          "args": [
+            0,
+            0,
+            4
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0027942590004386147
+        },
+        {
+          "args": [
+            0,
+            0,
+            4294967295
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0025377940000907984
+        },
+        {
+          "args": [
+            0,
+            1,
+            3
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002504152000255999
+        },
+        {
+          "args": [
+            0,
+            1,
+            4
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002465544000187947
+        },
+        {
+          "args": [
+            0,
+            1,
+            4294967295
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002599655999802053
+        },
+        {
+          "args": [
+            0,
+            31,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002465524999934132
+        },
+        {
+          "args": [
+            0,
+            31,
+            3
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0024719550001464086
+        },
+        {
+          "args": [
+            0,
+            31,
+            4
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002476892000231601
+        },
+        {
+          "args": [
+            0,
+            31,
+            4294967295
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002838559999872814
+        },
+        {
+          "args": [
+            0,
+            32,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0029764669998257887
+        }
+      ],
+      "failed_cases": 71
+    },
+    "policies": {
+      "B1": "reject",
+      "B2": "reject",
+      "B3_light": "reject",
+      "B3_busy": "reject"
+    }
+  },
+  {
+    "id": "length-seed33-attempt1",
+    "task": "length",
+    "seed": 33,
+    "attempt": 1,
+    "generation_returncode": 0,
+    "total_inference_wall_seconds": 2.165650128999914,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 198,
+      "completion_tokens": 1,
+      "total_tokens": 199
+    },
+    "load_seconds": 0.24269131699929858,
+    "generation_seconds": 1.6927732519998244,
+    "peak_rss_kib": 624016,
+    "cpu_seconds": 3.723536,
+    "network_socket_denied": true,
+    "backend": "llama-cpp-python 0.3.16",
+    "context": 2048,
+    "max_tokens": 384,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "threads": 2,
+    "function_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+    "status": "build_failed",
+    "build_error": "source_contract_rejected",
+    "development_pass": false,
+    "acceptance_pass": false,
+    "evaluation_pass": false,
+    "policies": {
+      "B1": "reject",
+      "B2": "reject",
+      "B3_light": "reject",
+      "B3_busy": "reject"
+    }
+  },
+  {
+    "id": "length-seed33-attempt2",
+    "task": "length",
+    "seed": 34,
+    "attempt": 2,
+    "generation_returncode": 0,
+    "total_inference_wall_seconds": 3.5630385269996623,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 226,
+      "completion_tokens": 34,
+      "total_tokens": 260
+    },
+    "load_seconds": 0.2474809790001018,
+    "generation_seconds": 3.1266158970001925,
+    "peak_rss_kib": 625056,
+    "cpu_seconds": 6.4522580000000005,
+    "network_socket_denied": true,
+    "backend": "llama-cpp-python 0.3.16",
+    "context": 2048,
+    "max_tokens": 384,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "threads": 2,
+    "function_sha256": "96c6e7692808cbe7c6a8f3d8e2aa1fb7b14bc2612c855e5c7589e987d3e9c1d6",
+    "status": "evaluated",
+    "development_pass": false,
+    "acceptance_pass": false,
+    "evaluation_pass": false,
+    "development": {
+      "passed": false,
+      "cases": 3,
+      "failures": [
+        {
+          "args": [
+            2,
+            1,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0028383449998727883
+        }
+      ],
+      "failed_cases": 1
+    },
+    "acceptance": {
+      "passed": false,
+      "cases": 6,
+      "failures": [
+        {
+          "args": [
+            1,
+            1,
+            9
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0025819100001172046
+        },
+        {
+          "args": [
+            0,
+            1,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.00305612200008909
+        },
+        {
+          "args": [
+            31,
+            30,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0026930620006169192
+        }
+      ],
+      "failed_cases": 3
+    },
+    "evaluation": {
+      "passed": false,
+      "cases": 116,
+      "failures": [
+        {
+          "args": [
+            0,
+            0,
+            4
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0040841070003807545
+        },
+        {
+          "args": [
+            0,
+            0,
+            4294967295
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0026691409993873094
+        },
+        {
+          "args": [
+            0,
+            1,
+            3
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0029107740001563798
+        },
+        {
+          "args": [
+            0,
+            1,
+            4
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0027185059998373617
+        },
+        {
+          "args": [
+            0,
+            1,
+            4294967295
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0027080290001322282
+        },
+        {
+          "args": [
+            0,
+            31,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0025528859996484243
+        },
+        {
+          "args": [
+            0,
+            31,
+            3
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.00279859599959309
+        },
+        {
+          "args": [
+            0,
+            31,
+            4
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002504793999833055
+        },
+        {
+          "args": [
+            0,
+            31,
+            4294967295
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002595380000457226
+        },
+        {
+          "args": [
+            0,
+            32,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0025271680005971575
+        }
+      ],
+      "failed_cases": 71
+    },
+    "policies": {
+      "B1": "reject",
+      "B2": "reject",
+      "B3_light": "reject",
+      "B3_busy": "reject"
+    }
+  },
+  {
+    "id": "arithmetic-seed11-attempt1",
+    "task": "arithmetic",
+    "seed": 11,
+    "attempt": 1,
+    "generation_returncode": 0,
+    "total_inference_wall_seconds": 2.146606387999782,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 205,
+      "completion_tokens": 1,
+      "total_tokens": 206
+    },
+    "load_seconds": 0.27321330399990984,
+    "generation_seconds": 1.6848189329994057,
+    "peak_rss_kib": 624164,
+    "cpu_seconds": 3.758632,
+    "network_socket_denied": true,
+    "backend": "llama-cpp-python 0.3.16",
+    "context": 2048,
+    "max_tokens": 384,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "threads": 2,
+    "function_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+    "status": "build_failed",
+    "build_error": "source_contract_rejected",
+    "development_pass": false,
+    "acceptance_pass": false,
+    "evaluation_pass": false,
+    "policies": {
+      "B1": "reject",
+      "B2": "reject",
+      "B3_light": "reject",
+      "B3_busy": "reject"
+    }
+  },
+  {
+    "id": "arithmetic-seed11-attempt2",
+    "task": "arithmetic",
+    "seed": 12,
+    "attempt": 2,
+    "generation_returncode": 0,
+    "total_inference_wall_seconds": 3.151709503999882,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 233,
+      "completion_tokens": 34,
+      "total_tokens": 267
+    },
+    "load_seconds": 0.23300383999958285,
+    "generation_seconds": 2.7319933529997797,
+    "peak_rss_kib": 623920,
+    "cpu_seconds": 5.670482,
+    "network_socket_denied": true,
+    "backend": "llama-cpp-python 0.3.16",
+    "context": 2048,
+    "max_tokens": 384,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "threads": 2,
+    "function_sha256": "d7f49647006e7a4675b0d40e0ac1f7dec116076e8839dc32d91f1a65a504eeff",
+    "status": "evaluated",
+    "development_pass": false,
+    "acceptance_pass": false,
+    "evaluation_pass": false,
+    "development": {
+      "passed": false,
+      "cases": 3,
+      "failures": [
+        {
+          "args": [
+            4294967295,
+            1,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.003334916999847337
+        }
+      ],
+      "failed_cases": 1
+    },
+    "acceptance": {
+      "passed": false,
+      "cases": 5,
+      "failures": [
+        {
+          "args": [
+            2147483648,
+            2147483648,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0030919069995434256
+        }
+      ],
+      "failed_cases": 1
+    },
+    "evaluation": {
+      "passed": false,
+      "cases": 398,
+      "failures": [
+        {
+          "args": [
+            1,
+            4294967295,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0026899670001512277
+        },
+        {
+          "args": [
+            1,
+            4294967295,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0025661760000730283
+        },
+        {
+          "args": [
+            1,
+            4294967295,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002455028999975184
+        },
+        {
+          "args": [
+            1,
+            4294967295,
+            2147483647
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002484933999767236
+        },
+        {
+          "args": [
+            1,
+            4294967295,
+            2147483648
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0025603969997973763
+        },
+        {
+          "args": [
+            1,
+            4294967295,
+            4294967294
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002624984999783919
+        },
+        {
+          "args": [
+            1,
+            4294967295,
+            4294967295
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0024801919998935773
+        },
+        {
+          "args": [
+            2,
+            4294967294,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0024962610004877206
+        },
+        {
+          "args": [
+            2,
+            4294967294,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0027891109994016006
+        },
+        {
+          "args": [
+            2,
+            4294967294,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0025944789995264728
+        }
+      ],
+      "failed_cases": 99
+    },
+    "policies": {
+      "B1": "reject",
+      "B2": "reject",
+      "B3_light": "reject",
+      "B3_busy": "reject"
+    }
+  },
+  {
+    "id": "arithmetic-seed22-attempt1",
+    "task": "arithmetic",
+    "seed": 22,
+    "attempt": 1,
+    "generation_returncode": 0,
+    "total_inference_wall_seconds": 2.5430098399992858,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 205,
+      "completion_tokens": 1,
+      "total_tokens": 206
+    },
+    "load_seconds": 0.2663928149995627,
+    "generation_seconds": 2.092113192999932,
+    "peak_rss_kib": 624076,
+    "cpu_seconds": 4.54333,
+    "network_socket_denied": true,
+    "backend": "llama-cpp-python 0.3.16",
+    "context": 2048,
+    "max_tokens": 384,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "threads": 2,
+    "function_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+    "status": "build_failed",
+    "build_error": "source_contract_rejected",
+    "development_pass": false,
+    "acceptance_pass": false,
+    "evaluation_pass": false,
+    "policies": {
+      "B1": "reject",
+      "B2": "reject",
+      "B3_light": "reject",
+      "B3_busy": "reject"
+    }
+  },
+  {
+    "id": "arithmetic-seed22-attempt2",
+    "task": "arithmetic",
+    "seed": 23,
+    "attempt": 2,
+    "generation_returncode": 0,
+    "total_inference_wall_seconds": 3.4202284650000365,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 233,
+      "completion_tokens": 34,
+      "total_tokens": 267
+    },
+    "load_seconds": 0.22095345399975486,
+    "generation_seconds": 2.9927550109996446,
+    "peak_rss_kib": 625224,
+    "cpu_seconds": 6.206282,
+    "network_socket_denied": true,
+    "backend": "llama-cpp-python 0.3.16",
+    "context": 2048,
+    "max_tokens": 384,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "threads": 2,
+    "function_sha256": "d7f49647006e7a4675b0d40e0ac1f7dec116076e8839dc32d91f1a65a504eeff",
+    "status": "evaluated",
+    "development_pass": false,
+    "acceptance_pass": false,
+    "evaluation_pass": false,
+    "development": {
+      "passed": false,
+      "cases": 3,
+      "failures": [
+        {
+          "args": [
+            4294967295,
+            1,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.003108251000412565
+        }
+      ],
+      "failed_cases": 1
+    },
+    "acceptance": {
+      "passed": false,
+      "cases": 5,
+      "failures": [
+        {
+          "args": [
+            2147483648,
+            2147483648,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0023573230000693
+        }
+      ],
+      "failed_cases": 1
+    },
+    "evaluation": {
+      "passed": false,
+      "cases": 398,
+      "failures": [
+        {
+          "args": [
+            1,
+            4294967295,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0024932859996624757
+        },
+        {
+          "args": [
+            1,
+            4294967295,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0025684699994599214
+        },
+        {
+          "args": [
+            1,
+            4294967295,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0028702729996439302
+        },
+        {
+          "args": [
+            1,
+            4294967295,
+            2147483647
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0029155620004530647
+        },
+        {
+          "args": [
+            1,
+            4294967295,
+            2147483648
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0025473069999861764
+        },
+        {
+          "args": [
+            1,
+            4294967295,
+            4294967294
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0029796779999742284
+        },
+        {
+          "args": [
+            1,
+            4294967295,
+            4294967295
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0024667369998496724
+        },
+        {
+          "args": [
+            2,
+            4294967294,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002480377999745542
+        },
+        {
+          "args": [
+            2,
+            4294967294,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0024449439997624722
+        },
+        {
+          "args": [
+            2,
+            4294967294,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0026319150001654634
+        }
+      ],
+      "failed_cases": 99
+    },
+    "policies": {
+      "B1": "reject",
+      "B2": "reject",
+      "B3_light": "reject",
+      "B3_busy": "reject"
+    }
+  },
+  {
+    "id": "arithmetic-seed33-attempt1",
+    "task": "arithmetic",
+    "seed": 33,
+    "attempt": 1,
+    "generation_returncode": 0,
+    "total_inference_wall_seconds": 2.5266317990008247,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 205,
+      "completion_tokens": 1,
+      "total_tokens": 206
+    },
+    "load_seconds": 0.3116353720006373,
+    "generation_seconds": 1.993278282000574,
+    "peak_rss_kib": 625552,
+    "cpu_seconds": 4.436164,
+    "network_socket_denied": true,
+    "backend": "llama-cpp-python 0.3.16",
+    "context": 2048,
+    "max_tokens": 384,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "threads": 2,
+    "function_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+    "status": "build_failed",
+    "build_error": "source_contract_rejected",
+    "development_pass": false,
+    "acceptance_pass": false,
+    "evaluation_pass": false,
+    "policies": {
+      "B1": "reject",
+      "B2": "reject",
+      "B3_light": "reject",
+      "B3_busy": "reject"
+    }
+  },
+  {
+    "id": "arithmetic-seed33-attempt2",
+    "task": "arithmetic",
+    "seed": 34,
+    "attempt": 2,
+    "generation_returncode": 0,
+    "total_inference_wall_seconds": 3.4740323780006293,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 233,
+      "completion_tokens": 34,
+      "total_tokens": 267
+    },
+    "load_seconds": 0.26322705399979895,
+    "generation_seconds": 3.0030066810004428,
+    "peak_rss_kib": 624024,
+    "cpu_seconds": 6.2567569999999995,
+    "network_socket_denied": true,
+    "backend": "llama-cpp-python 0.3.16",
+    "context": 2048,
+    "max_tokens": 384,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "threads": 2,
+    "function_sha256": "d7f49647006e7a4675b0d40e0ac1f7dec116076e8839dc32d91f1a65a504eeff",
+    "status": "evaluated",
+    "development_pass": false,
+    "acceptance_pass": false,
+    "evaluation_pass": false,
+    "development": {
+      "passed": false,
+      "cases": 3,
+      "failures": [
+        {
+          "args": [
+            4294967295,
+            1,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.005683865999344562
+        }
+      ],
+      "failed_cases": 1
+    },
+    "acceptance": {
+      "passed": false,
+      "cases": 5,
+      "failures": [
+        {
+          "args": [
+            2147483648,
+            2147483648,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.004490016999625368
+        }
+      ],
+      "failed_cases": 1
+    },
+    "evaluation": {
+      "passed": false,
+      "cases": 398,
+      "failures": [
+        {
+          "args": [
+            1,
+            4294967295,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002719455999795173
+        },
+        {
+          "args": [
+            1,
+            4294967295,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.003246659000069485
+        },
+        {
+          "args": [
+            1,
+            4294967295,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0028776540002581896
+        },
+        {
+          "args": [
+            1,
+            4294967295,
+            2147483647
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0027016590001949226
+        },
+        {
+          "args": [
+            1,
+            4294967295,
+            2147483648
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0029976739997437107
+        },
+        {
+          "args": [
+            1,
+            4294967295,
+            4294967294
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0068856679999953485
+        },
+        {
+          "args": [
+            1,
+            4294967295,
+            4294967295
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0032285670004057465
+        },
+        {
+          "args": [
+            2,
+            4294967294,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0029485999993994483
+        },
+        {
+          "args": [
+            2,
+            4294967294,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0034058289993481594
+        },
+        {
+          "args": [
+            2,
+            4294967294,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0030543749999196734
+        }
+      ],
+      "failed_cases": 99
+    },
+    "policies": {
+      "B1": "reject",
+      "B2": "reject",
+      "B3_light": "reject",
+      "B3_busy": "reject"
+    }
+  },
+  {
+    "id": "authorization-seed11-attempt1",
+    "task": "authorization",
+    "seed": 11,
+    "attempt": 1,
+    "generation_returncode": 0,
+    "total_inference_wall_seconds": 2.4149891039996874,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 203,
+      "completion_tokens": 1,
+      "total_tokens": 204
+    },
+    "load_seconds": 0.23084672200002387,
+    "generation_seconds": 2.005926208999881,
+    "peak_rss_kib": 624240,
+    "cpu_seconds": 4.335844,
+    "network_socket_denied": true,
+    "backend": "llama-cpp-python 0.3.16",
+    "context": 2048,
+    "max_tokens": 384,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "threads": 2,
+    "function_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+    "status": "build_failed",
+    "build_error": "source_contract_rejected",
+    "development_pass": false,
+    "acceptance_pass": false,
+    "evaluation_pass": false,
+    "policies": {
+      "B1": "reject",
+      "B2": "reject",
+      "B3_light": "reject",
+      "B3_busy": "reject"
+    }
+  },
+  {
+    "id": "authorization-seed11-attempt2",
+    "task": "authorization",
+    "seed": 12,
+    "attempt": 2,
+    "generation_returncode": 0,
+    "total_inference_wall_seconds": 3.5848639060004643,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 231,
+      "completion_tokens": 37,
+      "total_tokens": 268
+    },
+    "load_seconds": 0.23871190099998785,
+    "generation_seconds": 3.160545956000533,
+    "peak_rss_kib": 625356,
+    "cpu_seconds": 6.525175999999999,
+    "network_socket_denied": true,
+    "backend": "llama-cpp-python 0.3.16",
+    "context": 2048,
+    "max_tokens": 384,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "threads": 2,
+    "function_sha256": "a576a6957c03bb6cdc8419a10f451215dd4395a57261b17949557eec8fd32fa9",
+    "status": "evaluated",
+    "development_pass": false,
+    "acceptance_pass": false,
+    "evaluation_pass": false,
+    "development": {
+      "passed": false,
+      "cases": 3,
+      "failures": [
+        {
+          "args": [
+            1,
+            3,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.003248772999540961
+        }
+      ],
+      "failed_cases": 1
+    },
+    "acceptance": {
+      "passed": false,
+      "cases": 6,
+      "failures": [
+        {
+          "args": [
+            3,
+            3,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0036226040001565707
+        },
+        {
+          "args": [
+            1,
+            1,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0033507150001241826
+        }
+      ],
+      "failed_cases": 2
+    },
+    "evaluation": {
+      "passed": false,
+      "cases": 186,
+      "failures": [
+        {
+          "args": [
+            1,
+            1,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002581780000582512
+        },
+        {
+          "args": [
+            1,
+            3,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002534859000661527
+        },
+        {
+          "args": [
+            1,
+            3,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0029793220001010923
+        },
+        {
+          "args": [
+            1,
+            5,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002571805000116001
+        },
+        {
+          "args": [
+            1,
+            5,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0026494319999983418
+        },
+        {
+          "args": [
+            1,
+            5,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0027351199996701325
+        },
+        {
+          "args": [
+            1,
+            7,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002831394999702752
+        },
+        {
+          "args": [
+            1,
+            7,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0027704230005838326
+        },
+        {
+          "args": [
+            1,
+            7,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.003082182000071043
+        },
+        {
+          "args": [
+            2,
+            2,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0026936280000882107
+        }
+      ],
+      "failed_cases": 90
+    },
+    "policies": {
+      "B1": "reject",
+      "B2": "reject",
+      "B3_light": "reject",
+      "B3_busy": "reject"
+    }
+  },
+  {
+    "id": "authorization-seed22-attempt1",
+    "task": "authorization",
+    "seed": 22,
+    "attempt": 1,
+    "generation_returncode": 0,
+    "total_inference_wall_seconds": 2.8989097619996755,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 203,
+      "completion_tokens": 37,
+      "total_tokens": 240
+    },
+    "load_seconds": 0.2683824910000112,
+    "generation_seconds": 2.453651706000528,
+    "peak_rss_kib": 624592,
+    "cpu_seconds": 5.158135000000001,
+    "network_socket_denied": true,
+    "backend": "llama-cpp-python 0.3.16",
+    "context": 2048,
+    "max_tokens": 384,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "threads": 2,
+    "function_sha256": "a576a6957c03bb6cdc8419a10f451215dd4395a57261b17949557eec8fd32fa9",
+    "status": "evaluated",
+    "development_pass": false,
+    "acceptance_pass": false,
+    "evaluation_pass": false,
+    "development": {
+      "passed": false,
+      "cases": 3,
+      "failures": [
+        {
+          "args": [
+            1,
+            3,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.003282071999819891
+        }
+      ],
+      "failed_cases": 1
+    },
+    "acceptance": {
+      "passed": false,
+      "cases": 6,
+      "failures": [
+        {
+          "args": [
+            3,
+            3,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002955490999738686
+        },
+        {
+          "args": [
+            1,
+            1,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002850879000106943
+        }
+      ],
+      "failed_cases": 2
+    },
+    "evaluation": {
+      "passed": false,
+      "cases": 186,
+      "failures": [
+        {
+          "args": [
+            1,
+            1,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0027600069997788523
+        },
+        {
+          "args": [
+            1,
+            3,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0029792369996357593
+        },
+        {
+          "args": [
+            1,
+            3,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0030245449997892138
+        },
+        {
+          "args": [
+            1,
+            5,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002453988000524987
+        },
+        {
+          "args": [
+            1,
+            5,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0025119249994531856
+        },
+        {
+          "args": [
+            1,
+            5,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0026876390002144035
+        },
+        {
+          "args": [
+            1,
+            7,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002976182000566041
+        },
+        {
+          "args": [
+            1,
+            7,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002598324000246066
+        },
+        {
+          "args": [
+            1,
+            7,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002649521000421373
+        },
+        {
+          "args": [
+            2,
+            2,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002631093999298173
+        }
+      ],
+      "failed_cases": 90
+    },
+    "policies": {
+      "B1": "reject",
+      "B2": "reject",
+      "B3_light": "reject",
+      "B3_busy": "reject"
+    }
+  },
+  {
+    "id": "authorization-seed22-attempt2",
+    "task": "authorization",
+    "seed": 23,
+    "attempt": 2,
+    "generation_returncode": 0,
+    "total_inference_wall_seconds": 4.758685766999406,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 327,
+      "completion_tokens": 37,
+      "total_tokens": 364
+    },
+    "load_seconds": 0.2166723730006197,
+    "generation_seconds": 4.356712274000529,
+    "peak_rss_kib": 625104,
+    "cpu_seconds": 7.9585539999999995,
+    "network_socket_denied": true,
+    "backend": "llama-cpp-python 0.3.16",
+    "context": 2048,
+    "max_tokens": 384,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "threads": 2,
+    "function_sha256": "a576a6957c03bb6cdc8419a10f451215dd4395a57261b17949557eec8fd32fa9",
+    "status": "evaluated",
+    "development_pass": false,
+    "acceptance_pass": false,
+    "evaluation_pass": false,
+    "development": {
+      "passed": false,
+      "cases": 3,
+      "failures": [
+        {
+          "args": [
+            1,
+            3,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0030740590000277734
+        }
+      ],
+      "failed_cases": 1
+    },
+    "acceptance": {
+      "passed": false,
+      "cases": 6,
+      "failures": [
+        {
+          "args": [
+            3,
+            3,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002572764999968058
+        },
+        {
+          "args": [
+            1,
+            1,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0024493210003129207
+        }
+      ],
+      "failed_cases": 2
+    },
+    "evaluation": {
+      "passed": false,
+      "cases": 186,
+      "failures": [
+        {
+          "args": [
+            1,
+            1,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.020969410999896354
+        },
+        {
+          "args": [
+            1,
+            3,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.003645928999503667
+        },
+        {
+          "args": [
+            1,
+            3,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.011186929999894346
+        },
+        {
+          "args": [
+            1,
+            5,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.006526026999381429
+        },
+        {
+          "args": [
+            1,
+            5,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.006542522000017925
+        },
+        {
+          "args": [
+            1,
+            5,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.006920048999745632
+        },
+        {
+          "args": [
+            1,
+            7,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.010512646999814024
+        },
+        {
+          "args": [
+            1,
+            7,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0058738469997479115
+        },
+        {
+          "args": [
+            1,
+            7,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.006448931000704761
+        },
+        {
+          "args": [
+            2,
+            2,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.026334973000302853
+        }
+      ],
+      "failed_cases": 90
+    },
+    "policies": {
+      "B1": "reject",
+      "B2": "reject",
+      "B3_light": "reject",
+      "B3_busy": "reject"
+    }
+  },
+  {
+    "id": "authorization-seed33-attempt1",
+    "task": "authorization",
+    "seed": 33,
+    "attempt": 1,
+    "generation_returncode": 0,
+    "total_inference_wall_seconds": 3.113287352000043,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 203,
+      "completion_tokens": 37,
+      "total_tokens": 240
+    },
+    "load_seconds": 0.2960050700003194,
+    "generation_seconds": 2.5864693060002537,
+    "peak_rss_kib": 625276,
+    "cpu_seconds": 5.500948999999999,
+    "network_socket_denied": true,
+    "backend": "llama-cpp-python 0.3.16",
+    "context": 2048,
+    "max_tokens": 384,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "threads": 2,
+    "function_sha256": "a576a6957c03bb6cdc8419a10f451215dd4395a57261b17949557eec8fd32fa9",
+    "status": "evaluated",
+    "development_pass": false,
+    "acceptance_pass": false,
+    "evaluation_pass": false,
+    "development": {
+      "passed": false,
+      "cases": 3,
+      "failures": [
+        {
+          "args": [
+            1,
+            3,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0032547910004723235
+        }
+      ],
+      "failed_cases": 1
+    },
+    "acceptance": {
+      "passed": false,
+      "cases": 6,
+      "failures": [
+        {
+          "args": [
+            3,
+            3,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0026152500004172907
+        },
+        {
+          "args": [
+            1,
+            1,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002681048999875202
+        }
+      ],
+      "failed_cases": 2
+    },
+    "evaluation": {
+      "passed": false,
+      "cases": 186,
+      "failures": [
+        {
+          "args": [
+            1,
+            1,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0026017600002887775
+        },
+        {
+          "args": [
+            1,
+            3,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0025211580004906864
+        },
+        {
+          "args": [
+            1,
+            3,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002861249000488897
+        },
+        {
+          "args": [
+            1,
+            5,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0026095210005223635
+        },
+        {
+          "args": [
+            1,
+            5,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0025451600004089414
+        },
+        {
+          "args": [
+            1,
+            5,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0026594560004014056
+        },
+        {
+          "args": [
+            1,
+            7,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0023969120002220734
+        },
+        {
+          "args": [
+            1,
+            7,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0024719849998291465
+        },
+        {
+          "args": [
+            1,
+            7,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0023356299998340546
+        },
+        {
+          "args": [
+            2,
+            2,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002408574999208213
+        }
+      ],
+      "failed_cases": 90
+    },
+    "policies": {
+      "B1": "reject",
+      "B2": "reject",
+      "B3_light": "reject",
+      "B3_busy": "reject"
+    }
+  },
+  {
+    "id": "authorization-seed33-attempt2",
+    "task": "authorization",
+    "seed": 34,
+    "attempt": 2,
+    "generation_returncode": 0,
+    "total_inference_wall_seconds": 3.8025367589998496,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 328,
+      "completion_tokens": 37,
+      "total_tokens": 365
+    },
+    "load_seconds": 0.21155270300005213,
+    "generation_seconds": 3.4117047869995076,
+    "peak_rss_kib": 625536,
+    "cpu_seconds": 6.995356,
+    "network_socket_denied": true,
+    "backend": "llama-cpp-python 0.3.16",
+    "context": 2048,
+    "max_tokens": 384,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "threads": 2,
+    "function_sha256": "a576a6957c03bb6cdc8419a10f451215dd4395a57261b17949557eec8fd32fa9",
+    "status": "evaluated",
+    "development_pass": false,
+    "acceptance_pass": false,
+    "evaluation_pass": false,
+    "development": {
+      "passed": false,
+      "cases": 3,
+      "failures": [
+        {
+          "args": [
+            1,
+            3,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002839987999323057
+        }
+      ],
+      "failed_cases": 1
+    },
+    "acceptance": {
+      "passed": false,
+      "cases": 6,
+      "failures": [
+        {
+          "args": [
+            3,
+            3,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.003071475999604445
+        },
+        {
+          "args": [
+            1,
+            1,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0023900420001155
+        }
+      ],
+      "failed_cases": 2
+    },
+    "evaluation": {
+      "passed": false,
+      "cases": 186,
+      "failures": [
+        {
+          "args": [
+            1,
+            1,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002595591000499553
+        },
+        {
+          "args": [
+            1,
+            3,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0025766919998204685
+        },
+        {
+          "args": [
+            1,
+            3,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.003213519000382803
+        },
+        {
+          "args": [
+            1,
+            5,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0024902519999159267
+        },
+        {
+          "args": [
+            1,
+            5,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0024828559999150457
+        },
+        {
+          "args": [
+            1,
+            5,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002526096000110556
+        },
+        {
+          "args": [
+            1,
+            7,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002482150000105321
+        },
+        {
+          "args": [
+            1,
+            7,
+            1
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0025256549997720867
+        },
+        {
+          "args": [
+            1,
+            7,
+            2
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.0028546599996843725
+        },
+        {
+          "args": [
+            2,
+            2,
+            0
+          ],
+          "expected": 0,
+          "returncode": 0,
+          "stdout": "1\n",
+          "stderr": "",
+          "timeout": false,
+          "wall_seconds": 0.002924715000517608
+        }
+      ],
+      "failed_cases": 90
+    },
+    "policies": {
+      "B1": "reject",
+      "B2": "reject",
+      "B3_light": "reject",
+      "B3_busy": "reject"
+    }
+  }
+]
