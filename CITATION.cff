@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite this research software and record the exact commit used."
+type: software
+title: "Satellite Repair Lab"
+authors:
+  - family-names: Aladdin
+    given-names: Shawki
+repository-code: "https://github.com/shawkialaddin/satellite-repair-lab"
+url: "https://github.com/shawkialaddin/satellite-repair-lab"
+license: Apache-2.0
+abstract: >-
+  Experimental infrastructure for studying offline vulnerability repair and
+  independent patch acceptance in satellite-inspired applications. The initial
+  pilot evaluates handwritten fixtures and synthetic mission timing; it does
+  not demonstrate autonomous AI repair or flight readiness.
+keywords:
+  - automated program repair
+  - patch validation
+  - satellite cybersecurity
+  - reproducibility

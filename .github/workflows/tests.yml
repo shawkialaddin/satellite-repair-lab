@@ -1,0 +1,21 @@
+name: Tests
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fixture-tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Record environment
+        run: |
+          python3 --version
+          cc --version
+      - name: Test trusted fixtures and recovery
+        run: python3 -m unittest discover -s tests -v
+      - name: Run fixture pilot
+        run: python3 lab.py --output /tmp/satellite-repair-pilot
